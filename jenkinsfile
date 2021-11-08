@@ -1,0 +1,8 @@
+pipeline {
+    agent any
+
+    stage('SCM') {
+    // some block
+    git 'https://github.com/jabedhasan21/java-hello-world-with-maven.git'
+    } 
+}

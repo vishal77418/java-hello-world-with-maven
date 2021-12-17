@@ -5,7 +5,7 @@ import org.joda.time.LocalTime;
 public class HelloWorld {
     public static void main(String[] args) {
       LocalTime currentTime = new LocalTime();
-		  System.out.println("Hello i am bandu");
+		  System.out.println("Hello i am kumkum");
 
         Greeter greeter = new Greeter();
         System.out.println(greeter.sayHello());

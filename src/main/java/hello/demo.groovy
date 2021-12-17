@@ -8,7 +8,7 @@ pipeline {
         stage('checkout') {
             steps {
                 checkout([$class: 'GitSCM',
-                 branches: [[name: 'refs/tags/${TAG}']],
+                 branches: [[name: '*/tags*']],
                   extensions: [],
                    userRemoteConfigs: [[url: 'https://github.com/vishal77418/java-hello-world-with-maven.git']]])
             }

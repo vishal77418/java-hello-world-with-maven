@@ -8,11 +8,11 @@ pipeline {
         stage('checkout') {
             steps {
                checkout([$class: 'GitSCM',
-                branches: [[name: '*/master/tags/*']],
+                branches: [[name: 'ref/tags/*']],
                  extensions: [],
                   userRemoteConfigs: [[credentialsId: '0f0b8a32-a668-424d-bc9e-db15ee794e90',
                    name: 'ref',
-                    refspec: '+refs/heads/master/tags*:refs/remotes/origin/master/tags/*',
+                    refspec: '+refs/heads/master:refs/remotes/origin/master*',
                     url: 'https://github.com/vishal77418/java-hello-world-with-maven.git']]])
                
         }
